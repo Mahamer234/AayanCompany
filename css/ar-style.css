@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap");
+/* =========== root ============ */
+:root {
+  --primary: #d10019;
+  --secondary: #6c6d6e;
+  --light: #f8f9fa;
+  --dark: #1c2c42;
+  --basicFont: "Cairo", serif;
+}
+body {
+  direction: rtl;
+  text-align: right;
+  font-family: var(--basicFont);
+  letter-spacing: normal;
+}
+.navbar .nav-item {
+  font-family: var(--basicFont);
+}
+/* ============== carousel media ================ */
+/* ============== small screen============ */
+@media (max-width: 668px) {
+  #header-carousel .carousel-item {
+    position: relative;
+    min-height: 450px;
+  }
+  .carousel-caption .btn {
+    margin-right: 1rem;
+  }
+  #header-carousel .carousel-item img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  /* =========== butttons pre next  */
+  .carousel-control-prev {
+    justify-content: end;
+  }
+  .carousel-control-next {
+    justify-content: start;
+  }
+}
+/* ========== about ======== */
+.about__info,
+.testmonials_up_div,
+.services_header {
+  border-right: 7px solid var(--primary);
+  border-left: 0;
+  padding: 15px;
+  color: black;
+}
+.about__p,
+.about__list li {
+  font-size: 1.1rem;
+  color: var(--dark);
+}
+/* services */
+.list-unstyled {
+  padding-right: 0 !important;
+}
+.list-unstyled li span {
+  padding-left: 0.5rem;
+}
+/* ============= portfolio =========== */
+.portfolio-section ul li::before {
+  content: "►";
+  display: inline-block;
+  transform: scaleX(-1);
+  direction: rtl;
+}
+/* --------- footer ------ */
+.footer .btn.btn-link {
+  text-align: right;
+  padding-top: 0.7rem;
+}
+.footer .btn.btn-link::before {
+  content: "\f104";
+  margin-left: 0.5rem;
+}
+/* =================================== */
+* {
+  letter-spacing: 0;
+}
+/* ========== from ======= */
+.rtl-input {
+  direction: rtl;
+  text-align: right;
+}
